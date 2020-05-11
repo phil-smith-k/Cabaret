@@ -7,16 +7,25 @@
     <title>Cabaret</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <nav>
-    <h1>Cabaret</h1>
+    <div class="header">
+        <h1>Cabaret</h1>
+        <a class="menu-icon" href=""><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="navbar-nav"> 
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
 </nav>
 <div class="body-content">
     
     <section>
-        <button id="eventbrite-widget-modal-trigger-104917878198" type="button">RSVP Here</button>
+        <button class="rsvp-btn "id="eventbrite-widget-modal-trigger-104917878198" type="button">RSVP Here</button>
     </section>
 
     <section class="welcome">
@@ -29,11 +38,23 @@
     <section class="google-form">
         <h2>Contribute</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe temporibus dignissimos exercitationem nulla cum reiciendis voluptatum autem optio maiores!</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdIz4ROxSJxzLH-ZVemSiLlGbbmmiI_Qr5P5WbkJj9fZs39g/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
+        <button id="contribute-btn" class="body-btn">Contribute</button>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdIz4ROxSJxzLH-ZVemSiLlGbbmmiI_Qr5P5WbkJj9fZs39g/viewform?embedded=true" height="940" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
+    </section>
+    <section>
+        <h2>Faqs</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur?</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sunt saepe quibusdam accusantium obcaecati atque quae recusandae eveniet officia ut.</p>
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias magni veritatis vero iusto, nostrum ut saepe dolores asperiores sapiente esse hic dolorum. Repudiandae aperiam numquam dolorum totam magnam!</p>
+        <h3>Lorem ipsum dolor sit amet?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facilis id, ad suscipit repellat similique tempora minus voluptatem sed maxime tenetur esse! Impedit ratione itaque eos corrupti asperiores fugit quod.</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quos?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur culpa voluptatum dolores assumenda, dolore id placeat sequi magnam magni accusamus iusto minima sapiente commodi?</p>
     </section>
 </div>
 <footer>
-
+        
 </footer>
 
 <!-- Noscript content for added SEO -->
@@ -57,9 +78,5 @@
         });
     </script>
 <script src="script.js"></script>
-
-
-
-
 </body>
 </html>

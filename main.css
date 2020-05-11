@@ -11,13 +11,18 @@
 /* Global Styling */
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     margin: 0;
+    height: 100%;
     /* background-color: var(--pale-gold); */
 }
 .body-content {
     padding: 1em;
+}
+a {
+    text-decoration: none;
 }
 h1 {
      font-size: 2em;
@@ -31,6 +36,10 @@ h2 {
     color: var(--blue);
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+h3 {
+    font-family: var(--site-font);
+    color: var(--blue);
 }
 ul {
     list-style-type: none;
@@ -51,14 +60,10 @@ section {
     background-color: white;
 }
 button {
-    display: block; 
-    margin: auto;
-    font-size: 18px;    
+    display: block;
     font-family: var(--site-font);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    width: 175px;
-    height: 50px;
     color: var(--gold);
     background-color: var(--blue);
     border: 1px solid var(--blue);
@@ -72,14 +77,70 @@ nav {
     margin: 0;
     padding: 0 1em;
     background-color: var(--blue);
-    height: 3.5em;
+    height: 4em;
     position: sticky;
-    top: 0; 
+    top: 0;
+    transition: height 1s;
+    transition-delay: 0.75s;
+}
+nav.nav-expanded {
+    height: 6.2em;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blue);
+    transform: translateX(100vw);
+    transition: all 0.8s;
+    transition-delay: 0;
+}
+
+.navbar-nav a {
+    color: var(--gold);
+    font-family: var(--site-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    margin-top: 0.5em;
+    font-size: 27px;
+    color: var(--gold);
+}
+
+.menu-open {
+    transform: translateX(0);
+    position: relative;
+}
+
+.rsvp-btn {
+    font-size: 18px; 
+    margin: auto;
+    width: 175px;
+    height: 50px;
+}
+.body-btn {
+    height: 30px;
+    width: 120px;
+    font-size: 13px;
+    margin-bottom: 1.3em;
 }
 
 .google-form iframe {
-    border-left: 3px solid var(--blue);
-    border-right: 3px solid var(--blue);
+    display: none;
+}
+
+.google-form iframe.form-open {
+    border: 3px solid var(--blue);
+    border-radius: 5px;
+    display: block;
+    width: 100%;
 }
 
 footer {
@@ -90,7 +151,16 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+    .menu-icon {
+        display: none;
+    }
     .body-content {
       padding: 0 10em;
+    }
+    .google-form iframe.form-open {
+        border: 3px solid var(--blue);
+        border-radius: 5px;
+        display: block;
+        width: 50%;
     }
   }
