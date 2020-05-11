@@ -20,6 +20,10 @@ h1 {
      height: 100%;
 }
 
+h2 {
+    padding-left: 0.75em;
+    font-family: var(--brand-font);
+}
 /* Nav Bar */
 
 nav {
@@ -30,3 +34,8 @@ nav {
     position: sticky;
 }
 
+/* Event Brite */
+
+.event-brite {
+    padding: 1em;
+}
