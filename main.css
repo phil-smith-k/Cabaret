@@ -1,0 +1,32 @@
+:root {
+    --gold: rgb(238,182,58);
+    --blue: rgb(43,86,128);
+    --pale-gold: rgb(215,190,139);
+    --dark-grey: rgb(102,102,102);
+    --transparent-black: rgb(0,0,0, 0.5);
+    --brand-font: 'Pacifico', cursive;
+}
+
+/* Global Styling */
+body {
+    margin: 0;
+}
+
+h1 {
+     font-family: var(--brand-font);
+     letter-spacing: 0.2em;
+     color: white;
+     margin: 0;
+     height: 100%;
+}
+
+/* Nav Bar */
+
+nav {
+    margin: 0;
+    padding: 0 1em;
+    background-color: var(--blue);
+    height: 3em;
+    position: sticky;
+}
+
