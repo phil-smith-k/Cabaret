@@ -33,7 +33,8 @@ p {
     text-align: justify;
 }
 iframe {
-    width: 100vw;
+    display: block;
+    width: 100%;
 }
 /* Nav Bar */
 
