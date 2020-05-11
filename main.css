@@ -5,6 +5,7 @@
     --dark-grey: rgb(102,102,102);
     --transparent-black: rgb(0,0,0, 0.5);
     --brand-font: 'Pacifico', cursive;
+    --site-font: 'Roboto', sans-serif;
 }
 
 /* Global Styling */
@@ -15,14 +16,25 @@ body {
 h1 {
      font-family: var(--brand-font);
      letter-spacing: 0.2em;
-     color: white;
+     color: var(--gold);
      margin: 0;
      height: 100%;
 }
 
 h2 {
     padding-left: 0.75em;
-    font-family: var(--brand-font);
+    font-family: var(--site-font);
+    color: var(--blue);
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-family: var(--site-font);
+    text-align: justify;
+}
+
+.container {
+    padding: 0 1.3em;
 }
 /* Nav Bar */
 
@@ -38,4 +50,8 @@ nav {
 
 .event-brite {
     padding: 1em;
+    border: 3px solid var(--blue);
+    margin: 0 1em;
+    border-radius: 5px;
+
 }
