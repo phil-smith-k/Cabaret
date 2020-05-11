@@ -38,7 +38,8 @@ ul {
 }
 p {
     font-family: var(--site-font);
-    text-align: justify;
+    text-align: left;
+    color: var(--blue);
 }
 iframe {
     display: block;
@@ -55,7 +56,7 @@ button {
     font-size: 18px;    
     font-family: var(--site-font);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     width: 175px;
     height: 50px;
     color: var(--gold);
@@ -63,6 +64,7 @@ button {
     border: 1px solid var(--blue);
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 800;
 }
 /* Nav Bar */
 
