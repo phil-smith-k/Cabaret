@@ -11,11 +11,9 @@
 /* Global Styling */
 html {
     scroll-behavior: smooth;
-    height: 100%;
 }
 body {
     margin: 0;
-    height: 100%;
     /* background-color: var(--pale-gold); */
 }
 .body-content {
@@ -118,6 +116,22 @@ nav.nav-expanded {
     transform: translateX(0);
     position: relative;
 }
+.countdown-container {
+    font-family: var(--site-font);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+.countdown-container p {
+    text-align: center;
+    color: var(--gold);
+    font-weight: 500;
+}
 
 .rsvp-btn {
     font-size: 18px; 
@@ -151,8 +165,19 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .menu-icon {
         display: none;
+    }
+    .navbar-nav {
+        transform: translateX(0);
+    }
+    .navbar-nav a {
+        margin-left: 1.5em;
     }
     .body-content {
       padding: 0 10em;
