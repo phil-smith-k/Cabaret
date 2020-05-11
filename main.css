@@ -92,7 +92,7 @@ nav.nav-expanded {
     display: flex;
     justify-content: space-around;
     background-color: var(--blue);
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
     transition: all 0.8s;
     transition-delay: 0;
 }
