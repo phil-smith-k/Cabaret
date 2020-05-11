@@ -62,6 +62,7 @@ button {
     background-color: var(--blue);
     border: 1px solid var(--blue);
     border-radius: 5px;
+    cursor: pointer;
 }
 /* Nav Bar */
 
@@ -74,5 +75,20 @@ nav {
     top: 0; 
 }
 
-/* Event Brite */
+.google-form iframe {
+    border-left: 3px solid var(--blue);
+    border-right: 3px solid var(--blue);
+}
 
+footer {
+    margin: 1em 0 0 0;
+    padding: 0 1em;
+    background-color: var(--blue);
+    height: 3.5em;
+}
+
+@media screen and (min-width: 800px) {
+    .body-content {
+      padding: 0 10em;
+    }
+  }
