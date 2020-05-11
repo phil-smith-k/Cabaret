@@ -22,17 +22,18 @@ h1 {
      margin: 0;
      height: 100%;
 }
-
 h2 {
     padding-left: 0.3em;
     font-family: var(--site-font);
     color: var(--blue);
     letter-spacing: 0.1em;
 }
-
 p {
     font-family: var(--site-font);
     text-align: justify;
+}
+iframe {
+    width: 100vw;
 }
 /* Nav Bar */
 
@@ -51,3 +52,5 @@ nav {
     margin: 0 1em;
     border-radius: 5px;
 }
+
+/* Google Form */
