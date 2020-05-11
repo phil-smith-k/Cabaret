@@ -12,7 +12,9 @@
 body {
     margin: 0;
 }
-
+.body-content {
+    padding: 1em;
+}
 h1 {
      font-family: var(--brand-font);
      letter-spacing: 0.2em;
@@ -32,10 +34,6 @@ p {
     font-family: var(--site-font);
     text-align: justify;
 }
-
-.container {
-    padding: 0 1.3em;
-}
 /* Nav Bar */
 
 nav {
@@ -49,9 +47,7 @@ nav {
 /* Event Brite */
 
 .event-brite {
-    padding: 1em;
     border: 3px solid var(--blue);
     margin: 0 1em;
     border-radius: 5px;
-
 }
