@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabaret</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,40 +14,41 @@
     <h1>Cabaret</h1>
 </nav>
 <div class="body-content">
-
+    
+    <button id="eventbrite-widget-modal-trigger-104917878198" type="button">RSVP Here</button>
     <section class="welcome">
         <h2>Welcome</h2>
         <div class="container">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, libero. Fuga, dolorem consequatur beatae aut mollitia suscipit eligendi voluptatum deleniti earum praesentium itaque iure autem doloremque, facere incidunt et quidem excepturi illum obcaecati libero, quas sit magnam recusandae sint. Ex sequi veniam earum eius suscipit debitis autem ipsa, voluptatibus necessitatibus ratione totam blanditiis vero quisquam nesciunt, tempore dicta doloribus similique cum porro ipsum ut nihil veritatis ab qui! In modi quasi atque sequi qui reiciendis tempora obcaecati sint hic.</p>
         </div>
     </section>
-    <section class="event-info">
-        <h2>RSVP Here</h2>
-        <div class="event-brite" id="eventbrite-widget-container-104917878198"></div>
-    </section>
     <section class="google-form">
-        <h2>Contribute to Auction</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdIz4ROxSJxzLH-ZVemSiLlGbbmmiI_Qr5P5WbkJj9fZs39g/viewform?embedded=true" width="640" height="809" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <h2>Contribute</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe temporibus dignissimos exercitationem nulla cum reiciendis voluptatum autem optio maiores!</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdIz4ROxSJxzLH-ZVemSiLlGbbmmiI_Qr5P5WbkJj9fZs39g/viewform?embedded=true" width="640" height="830" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading…</iframe>
     </section>
 </div>
 
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
+<!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com/e/cabaret-tickets-104917878198" rel="noopener noreferrer" target="_blank"></noscript>
+    <!-- You can customize this button any way you like -->
+    <noscript></a>Buy Tickets on Eventbrite</noscript>
     
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: '104917878198',
-        iframeContainerId: 'eventbrite-widget-container-104917878198',
-        
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-    });
-</script>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+    
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '104917878198',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-104917878198',
+            onOrderComplete: exampleCallback
+        });
+    </script>
 <script src="script.js"></script>
 
 
