@@ -44,6 +44,6 @@ function countdownHandler() {
     countdown.textContent = `${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds`;
 }
 
-contributeBtn.addEventListener('click', toggleFormDisplay);
+// contributeBtn.addEventListener('click', toggleFormDisplay);
 menuIcon.addEventListener('click', toggleNavMenu);
 window.setInterval(countdownHandler, 1000);

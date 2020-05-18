@@ -1,11 +1,23 @@
 :root {
+    --background: #859DD3;
+    --accent: #f2d169;
     --gold: rgb(238,182,58);
     --blue: rgb(43,86,128);
     --pale-gold: rgb(215,190,139);
     --dark-grey: rgb(102,102,102);
-    --transparent-black: rgb(0,0,0, 0.5);
-    --brand-font: 'Pacifico', cursive;
-    --site-font:  'Ubuntu', sans-serif;
+    --site: rgb(0,0,0);
+    --brand-font: 'Retrocycles', 'Oswald', sans-serif;
+    --site-font:  'Renogare', 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: Renogare;
+    src: url(assets/fonts/renogare/Renogare-Regular.otf);
+}
+
+@font-face {
+    font-family: Retrocycles;
+    src: url(assets/fonts/retrocycles/Retrocycles.otf);
 }
 
 /* Global Styling */
@@ -14,7 +26,7 @@ html {
 }
 body {
     margin: 0;
-    /* background-color: var(--pale-gold); */
+    background-color: var(--background);
 }
 .body-content {
     padding: 1em;
@@ -23,15 +35,15 @@ a {
     text-decoration: none;
 }
 h1 {
-     font-size: 2em;
-     font-family: var(--brand-font);
-     letter-spacing: 0.2em;
-     color: var(--gold);
-     margin: 0;
+    font-size: 2.2em;
+    font-family: var(--brand-font);
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin: 0;
 }
 h2 {
     font-family: var(--site-font);
-    color: var(--blue);
+    color: var(--site);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -46,7 +58,7 @@ ul {
 p {
     font-family: var(--site-font);
     text-align: left;
-    color: var(--blue);
+    color: var(--site);
 }
 iframe {
     display: block;
@@ -55,31 +67,31 @@ iframe {
 section {
     margin-top: 1.5em;
     padding: 0 1.2em; 
-    background-color: white;
+    background-color: var(--background);
 }
 button {
     display: block;
     font-family: var(--site-font);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--gold);
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
+    letter-spacing: 0.1em;
+    color: var(--site);
+    background-color: var(--background);
+    border: 3px solid var(--site);
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 800;
 }
 /* Nav Bar */
 
 nav {
     margin: 0;
     padding: 0 1em;
-    background-color: var(--blue);
+    background-color: var(--background);
     height: 4em;
     position: sticky;
     top: 0;
     transition: height 1s;
     transition-delay: 0.75s;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
 }
 nav.nav-expanded {
     height: 6.2em;
@@ -90,38 +102,55 @@ nav.nav-expanded {
 }
 .navbar-nav {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--blue);
+    justify-content: space-between;
+    margin-top: 0.5em;
+    background-color: var(--background);
     transform: translateX(-100vw);
     transition: all 0.8s;
     transition-delay: 0;
 }
-
+.letter {
+    font-size: 1.3em;
+}
 .navbar-nav a {
-    color: var(--gold);
+    color: var(--accent);
     font-family: var(--site-font);
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
     cursor: pointer;
+}
+
+.navbar-nav a:hover {
+    color: var(--pale-gold);
 }
 
 .menu-icon i {
     margin-top: 0.5em;
     font-size: 27px;
-    color: var(--gold);
+    color: var(--accent);
 }
 
 .menu-open {
     transform: translateX(0);
     position: relative;
 }
+.banner-pic {
+   width: 100%;
+}
+/* Body */
+.banner {
+    width: 100%;
+    height: 8vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .countdown-container {
     font-family: var(--site-font);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    background-color: var(--blue);
-    border: 1px solid var(--blue);
+    background-color: var(--background);
+    border: 3px solid var(--site);
     border-radius: 5px;
     width: 80%;
     margin: auto;
@@ -129,14 +158,14 @@ nav.nav-expanded {
 
 .countdown-container p {
     text-align: center;
-    color: var(--gold);
+    color: var(--black);
     font-weight: 500;
 }
 
 .rsvp-btn {
     font-size: 18px; 
     margin: auto;
-    width: 175px;
+    width: 250px;
     height: 50px;
 }
 .body-btn {
@@ -145,7 +174,11 @@ nav.nav-expanded {
     font-size: 13px;
     margin-bottom: 1.3em;
 }
-
+.event-date {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
 .google-form iframe {
     display: none;
 }
@@ -163,7 +196,9 @@ footer {
     background-color: var(--blue);
     height: 3.5em;
 }
-
+.hero {
+    width: 100%;
+}
 @media screen and (min-width: 800px) {
     nav {
         display: flex;
@@ -175,9 +210,13 @@ footer {
     }
     .navbar-nav {
         transform: translateX(0);
+        margin-top: 0;
     }
     .navbar-nav a {
         margin-left: 1.5em;
+    }
+    .banner {
+        height: 25vh;
     }
     .body-content {
       padding: 0 10em;
