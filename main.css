@@ -33,7 +33,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--accent);
 }
 h1 {
     font-size: 2.2em;
@@ -50,15 +50,27 @@ h2 {
     color: var(--site);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 h3 {
     font-family: var(--site-font);
-    color: var(--blue);
+    color: var(--site);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 ul {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
+}
+ul li {
+    font-family: var(--site-font);
+    color: var(--site);
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+hr {
+    border-color: var(--accent);
+    margin: 2em 0; 
 }
 p {
     font-family: var(--site-font);
@@ -67,6 +79,7 @@ p {
     line-height: 1.5em;
     font-size: 19px;
     letter-spacing: 0.04em;
+    text-shadow: 0.5px 0.5px 0.5px var(--deep-purple);
     /* text-align: justify; */
 }
 iframe {
@@ -101,7 +114,7 @@ nav {
     top: 0;
     transition: height 1s;
     transition-delay: 0.75s;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+    box-shadow: 0 4px 2px -2px var(--deep-purple);
 }
 nav.nav-expanded {
     height: 6.2em;
@@ -159,18 +172,19 @@ nav.nav-expanded {
     font-family: var(--site-font);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    background-color: var(--background);
-    border: 3px solid var(--site);
+    background-color: var(--accent);
+    border: 3px solid var(--deep-purple);
     border-radius: 5px;
     width: 80%;
     margin: auto;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
 }
 
 .countdown-container p {
     text-align: center;
-    color: var(--black);
+    color: var(--deep-purple);
     font-weight: 500;
-    text-shadow: 0.5px 0.5px 0.5px black;
+    text-shadow: 0.5px 0.5px 0.5px var(--deep-purple);
 }
 
 .rsvp-btn {
@@ -212,12 +226,22 @@ footer h1 {
 }
 .hero {
     width: 100%;
+    border-radius: 20px;
 }
 @media screen and (min-width: 800px) {
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .text-center p {
+        text-align: center;
+    }
+    section {
+        padding: 3em;
+    }
+    hr  {
+        margin: 2em 0;
     }
     .menu-icon {
         display: none;
@@ -234,6 +258,14 @@ footer h1 {
     }
     .body-content {
       padding: 0 10em;
+    }
+    .countdown-container {
+        width: 30%;
+    }
+    .hero {
+        width: 50%;
+        display: block;
+        margin: auto;
     }
     .google-form iframe.form-open {
         border: 3px solid var(--blue);
