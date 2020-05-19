@@ -1,7 +1,7 @@
 :root {
     --background: #859DD3;
     --accent: #f2d169;
-    --gold: rgb(238,182,58);
+    --deep-purple: #2E2E72;
     --blue: rgb(43,86,128);
     --pale-gold: rgb(215,190,139);
     --dark-grey: rgb(102,102,102);
@@ -33,19 +33,24 @@ body {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 h1 {
     font-size: 2.2em;
     font-family: var(--brand-font);
     letter-spacing: 0.3em;
-    color: var(--accent);
+    color: var(--deep-purple);
     margin: 0;
+}
+h1.content-header {
+    color: var(--site);
 }
 h2 {
     font-family: var(--site-font);
     color: var(--site);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    margin: 2em 0;
 }
 h3 {
     font-family: var(--site-font);
@@ -59,6 +64,10 @@ p {
     font-family: var(--site-font);
     text-align: left;
     color: var(--site);
+    line-height: 1.5em;
+    font-size: 19px;
+    letter-spacing: 0.04em;
+    /* text-align: justify; */
 }
 iframe {
     display: block;
@@ -74,10 +83,11 @@ button {
     font-family: var(--site-font);
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--site);
-    background-color: var(--background);
-    border: 3px solid var(--site);
+    color: var(--deep-purple);
+    background-color: var(--accent);
+    border: 3px solid var(--deep-purple);
     border-radius: 5px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
     cursor: pointer;
 }
 /* Nav Bar */
@@ -85,7 +95,7 @@ button {
 nav {
     margin: 0;
     padding: 0 1em;
-    background-color: var(--background);
+    background-color: var(--accent);
     height: 4em;
     position: sticky;
     top: 0;
@@ -104,7 +114,7 @@ nav.nav-expanded {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5em;
-    background-color: var(--background);
+    background-color: var(--accent);
     transform: translateX(-100vw);
     transition: all 0.8s;
     transition-delay: 0;
@@ -113,7 +123,7 @@ nav.nav-expanded {
     font-size: 1.3em;
 }
 .navbar-nav a {
-    color: var(--accent);
+    color: var(--deep-purple);
     font-family: var(--site-font);
     text-transform: uppercase;
     font-weight: 800;
@@ -122,13 +132,13 @@ nav.nav-expanded {
 }
 
 .navbar-nav a:hover {
-    color: var(--pale-gold);
+    color: var(--background);
 }
 
 .menu-icon i {
     margin-top: 0.5em;
     font-size: 27px;
-    color: var(--accent);
+    color: var(--deep-purple);
 }
 
 .menu-open {
@@ -160,6 +170,7 @@ nav.nav-expanded {
     text-align: center;
     color: var(--black);
     font-weight: 500;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 .rsvp-btn {
@@ -193,8 +204,11 @@ nav.nav-expanded {
 footer {
     margin: 1em 0 0 0;
     padding: 0 1em;
-    background-color: var(--blue);
-    height: 3.5em;
+    background-color: var(--accent);
+    height: 4em;
+}
+footer h1 {
+    float: right;
 }
 .hero {
     width: 100%;
