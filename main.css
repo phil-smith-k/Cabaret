@@ -109,7 +109,7 @@ nav {
     margin: 0;
     padding: 0 1em;
     background-color: var(--accent);
-    height: 4em;
+    height: 5em;
     position: sticky;
     top: 0;
     transition: height 1s;
@@ -142,6 +142,11 @@ nav.nav-expanded {
     font-weight: 800;
     letter-spacing: 0.1em;
     cursor: pointer;
+}
+.menu-divider {
+    display: block;
+    font-weight: bolder;
+    color: var(--deep-purple);
 }
 
 .navbar-nav a:hover {
@@ -233,6 +238,9 @@ footer h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .menu-divider {
+        display: none;
     }
     .text-center p {
         text-align: center;

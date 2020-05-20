@@ -15,9 +15,11 @@
         <a href="index.html"><h1>Cabaret</h1></a>
         <a class="menu-icon" href=""><i class="fa fa-bars"></i></a>
     </div>
-    <div class="navbar-nav"> 
+    <div class="navbar-nav">
         <a href="attend.html">Attend</a>
+        <span class="menu-divider">|</span>
         <a href="contribute.html">Contribute</a>
+        <span class="menu-divider">|</span>
         <a href="">Contact</a>
     </div>
 </nav>
@@ -28,7 +30,7 @@
         <p>Cabaret will be held virtually for the first time. To attend Cabaret, purchase your ticket by clicking the link below.</p>
         <p>Tickets are $20 per person. All proceeds go to benefit the Goucher M.A.A.A. Scholarship Fund.</p>
         <p>On July 31, you will receive an email with the link to join the event. Cabaret will be held on Zoom.</p>
-        <button class="rsvp-btn "id="eventbrite-widget-modal-trigger-104917878198" type="button">Get Your Ticket</button>
+        <button class="rsvp-btn" id="eventbrite-widget-modal-trigger-105454242478" type="button">Get Your Tickets</button>
     </section>
     <hr>
     <section>
@@ -57,27 +59,22 @@
 <footer>
     <h1><span class="letter">C</span></h1>
 </footer>
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-<!-- Noscript content for added SEO -->
-<noscript><a href="https://www.eventbrite.com/e/cabaret-tickets-104917878198" rel="noopener noreferrer" target="_blank"></noscript>
-    <!-- You can customize this button any way you like -->
-    <noscript></a>Buy Tickets on Eventbrite</noscript>
-    
-    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-    
-    <script type="text/javascript">
-        var exampleCallback = function() {
-            console.log('Order complete!');
-        };
-    
-        window.EBWidgets.createWidget({
-            widgetType: 'checkout',
-            eventId: '104917878198',
-            modal: true,
-            modalTriggerElementId: 'eventbrite-widget-modal-trigger-104917878198',
-            onOrderComplete: exampleCallback
-        });
-    </script>
-<script src="script.js"></script>
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '105454242478',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-105454242478',
+        onOrderComplete: exampleCallback
+    });
+</script>
+
+<script src="script-attend.js"></script>
 </body>
 </html>
