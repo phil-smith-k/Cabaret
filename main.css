@@ -30,6 +30,8 @@ body {
 }
 .body-content {
     padding: 1em;
+    background-color: #859dd3;
+    /* background-image: url("assets/background.png"); */
 }
 a {
     text-decoration: none;
@@ -209,6 +211,11 @@ nav.nav-expanded {
     font-size: 2em;
     margin-bottom: 0.5em;
 }
+.question {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
 .google-form iframe {
     display: none;
 }
@@ -276,6 +283,11 @@ footer h1 {
     section {
         padding: 0.5em;
     }
+    .question {
+        text-align: center;
+        font-size: 1.9em;
+        margin-bottom: 0.5em;
+    }
     hr  {
         margin: 2em 0;
     }
@@ -296,7 +308,7 @@ footer h1 {
       padding: 0 10em;
     }
     .countdown-container {
-        width: 30%;
+        width: 80%;
     }
     .hero {
         width: 50%;
