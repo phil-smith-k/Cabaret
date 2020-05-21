@@ -7,7 +7,6 @@ const eventDate = new Date("Jul 31, 2020 19:00:00").getTime();
 const rsvp = document.querySelector('.rsvp-btn');
 const donateAnchor = document.querySelector('.donating-link');
 
-
 function toggleFormDisplay() {
     if (form.classList.contains('form-open')) {
         form.classList.remove('form-open');
@@ -51,8 +50,6 @@ function handleDonateClick(e) {
     rsvp.click();
 }
 
-
-// contributeBtn.addEventListener('click', toggleFormDisplay);
 menuIcon.addEventListener('click', toggleNavMenu);
 window.setInterval(countdownHandler, 1000);
 donateAnchor.addEventListener('click', handleDonateClick);

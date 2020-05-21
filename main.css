@@ -70,6 +70,7 @@ ul li {
     color: var(--site);
     margin-bottom: 0.5em;
     font-size: 20px;
+    text-shadow: 0.5px 0.5px 0.5px var(--deep-purple);
 }
 hr {
     border-color: var(--accent);
@@ -241,6 +242,29 @@ footer h1 {
     width: 100%;
     border-radius: 20px;
 }
+
+.contribute-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contribute-nav a {
+    display: block;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    font-family: var(--site-font);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--deep-purple);
+    background-color: var(--accent);
+    border: 2px solid var(--deep-purple);
+    border-radius: 5px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+    cursor: pointer;
+    font-size: 8px;
+}
+
 @media screen and (min-width: 800px) {
     nav {
         display: flex;
@@ -303,10 +327,21 @@ footer h1 {
         margin-left: 1.5em;
     }
     .banner {
-        height: 25vh;
+        height: 20vh;
+        width: 90%;
+        display: block;
+        margin: 2em auto;
     }
     .body-content {
       padding: 0 10em;
+    }
+    .contribute-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contribute-nav a {
+        width: 200px;
+        font-size: 0.85em;
     }
     .countdown-container {
         width: 80%;
@@ -322,4 +357,4 @@ footer h1 {
         display: block;
         width: 50%;
     }
-  }
+}
