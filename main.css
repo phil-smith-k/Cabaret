@@ -48,10 +48,11 @@ h1.content-header {
     color: var(--site);
 }
 h2 {
-    font-family: var(--site-font);
+    font-family: var(--brand-font);
     color: var(--site);
+    font-size: 2em;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin: 1em 0;
 }
 h3 {
