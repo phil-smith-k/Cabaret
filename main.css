@@ -56,9 +56,10 @@ h2 {
     margin: 1em 0;
 }
 h3 {
-    font-family: var(--site-font);
+    font-family: var(--brand-font);
+    font-size: 1.5em;
     color: var(--site);
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 0.08em;
 }
 ul {
@@ -69,8 +70,9 @@ ul li {
     font-family: var(--site-font);
     color: var(--site);
     margin-bottom: 0.5em;
+
     font-size: 20px;
-    text-shadow: 0.5px 0.5px 0.5px var(--deep-purple);
+    /* text-shadow: 0.5px 0.5px 0.5px var(--deep-purple); */
 }
 hr {
     border-color: var(--accent);
@@ -83,7 +85,7 @@ p {
     line-height: 1.5em;
     font-size: 19px;
     letter-spacing: 0.04em;
-    text-shadow: 0.5px 0.5px 0.5px var(--deep-purple);
+    /* text-shadow: 0.5px 0.5px 0.5px var(--deep-purple); */
     /* text-align: justify; */
 }
 iframe {
@@ -325,6 +327,9 @@ footer h1 {
     }
     .navbar-nav a {
         margin-left: 1.5em;
+    }
+    ul li {
+        margin-left: 2em;
     }
     .banner {
         height: 20vh;
