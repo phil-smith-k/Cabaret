@@ -191,6 +191,20 @@ nav.nav-expanded {
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
 }
 
+#link-btn {
+    font-family: var(--site-font);
+    display: block;
+    text-align: center;
+    color: var(--deep-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    background-color: var(--accent);
+    border: 3px solid var(--deep-purple);
+    border-radius: 5px;
+    width: 170px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.3);
+}
+
 .countdown-container p {
     text-align: center;
     color: var(--deep-purple);
